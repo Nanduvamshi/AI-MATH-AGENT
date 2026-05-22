@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+venv/
+.venv/
+env/
+
+# Secrets
+.env
+.env.local
+
+# Vector store (rebuilt locally)
+qdrant_db/
+
+# Raw data (downloaded / unzipped locally)
+Datasets/raw/
+
+# HuggingFace cache (large)
+.hf_cache/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

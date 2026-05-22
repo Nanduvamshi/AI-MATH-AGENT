@@ -1,0 +1,37 @@
+# Core orchestration
+langchain>=0.3.20
+langchain-community>=0.3.20
+langchain-core>=0.3.60
+langchain-huggingface>=0.3.0
+langchain-groq>=0.3.0
+
+# LLM (Groq)
+groq>=0.20.0
+
+# Embeddings — torch pinned (2.12 fails to load DLLs on Win11+OneDrive)
+# Install torch separately from CPU wheels:
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+sentence-transformers>=3.3.0
+
+# Vector store
+qdrant-client>=1.12.0
+
+# Agent framework
+dspy-ai>=2.5.0
+
+# Web search fallback
+exa-py>=1.16.0,<2.0
+
+# CLI + config
+typer>=0.15.0
+python-dotenv>=1.0.0
+
+# Data
+pandas>=2.2.0
+pyarrow>=18.0.0
+numpy>=1.26,<3.0
+tqdm>=4.66.0
+
+# Testing
+pytest>=8.3.0
